@@ -1,0 +1,3 @@
+[build]
+# https://github.com/devcontainers/templates/blob/main/src/rust-postgres/.cargo/config.toml
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]

@@ -1,0 +1,57 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
+	"mounts": [
+		// https://github.com/devcontainers/templates/blob/main/src/rust/.devcontainer/devcontainer.json
+		{
+			"source": "devcontainer-cargo-cache-${devcontainerId}",
+			"target": "/usr/local/cargo",
+			"type": "volume"
+		},
+		// https://code.visualstudio.com/remote/advancedcontainers/avoid-extension-reinstalls
+		{
+			"source": "devcontainer-vscode-extensions-cache-${devcontainerId}",
+			"target": "/home/vscode/.vscode-server/extensions",
+			"type": "volume"
+		}
+	],
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		// https://github.com/devcontainers/features/tree/main/src/rust
+		"ghcr.io/devcontainers/features/rust:1": {
+			"profile": "default"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "cargo build",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"EditorConfig.EditorConfig"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
