@@ -6,11 +6,12 @@ pub mod hello_world;
 pub mod guessing_game;
 
 // Chapter 3
+pub mod comments;
 pub mod functions;
 pub mod no_type_annotations;
 pub mod variables;
 
-mod comments;
+mod branches;
 
 fn main() {
     // println!("Hello, world!");
@@ -23,6 +24,7 @@ fn main() {
     // variables::main();           // Chapter 3.1
     // no_type_annotations::main(); // Chapter 3.2
     // functions::main();           // Chapter 3.3
+    // comments::main();            // Chapter 3.4
 
-    comments::main(); // Chapter 3.4
+    branches::main(); // Chapter 3.5
 }
