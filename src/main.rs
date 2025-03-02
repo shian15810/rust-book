@@ -9,10 +9,13 @@ pub mod guessing_game;
 pub mod branches;
 pub mod comments;
 pub mod functions;
+pub mod loops;
 pub mod no_type_annotations;
 pub mod variables;
 
-mod loops;
+// Chapter 4
+
+mod ownership;
 
 fn main() {
     // println!("Hello, world!");
@@ -27,6 +30,7 @@ fn main() {
     // functions::main();           // Chapter 3.3
     // comments::main();            // Chapter 3.4
     // branches::main();            // Chapter 3.5
+    // loops::main();               // Chapter 3.5
 
-    loops::main(); // Chapter 3.5
+    ownership::main(); // Chapter 4.1
 }
