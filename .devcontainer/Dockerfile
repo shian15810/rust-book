@@ -2,8 +2,8 @@
 FROM mcr.microsoft.com/devcontainers/base:bookworm
 
 # https://github.com/dependabot-fixtures/docker-with-source/blob/main/Dockerfile
-LABEL org.opencontainers.image.source="https://github.com/shian15810/rust-devcontainer-template"
-LABEL org.opencontainers.image.description="Rust Dev Container Template"
+LABEL org.opencontainers.image.source="https://github.com/shian15810/rust-book"
+LABEL org.opencontainers.image.description="Rust Book"
 
 # https://github.com/microsoft/vscode-remote-release/issues/7690
 RUN mkdir -p /home/vscode/.vscode-server/extensions \

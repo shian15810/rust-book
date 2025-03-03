@@ -1,3 +1,3 @@
-# rust-devcontainer-template
+# rust-book
 
-Rust Dev Container Template
+Rust Book
