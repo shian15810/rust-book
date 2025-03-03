@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "rust-devcontainer-template"
+name = "rust-book"
 version = "0.1.0"

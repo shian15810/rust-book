@@ -1,12 +1,12 @@
 [package]
-name = "rust-devcontainer-template"
+name = "rust-book"
 version = "0.1.0"
 edition = "2024"
-description = "Rust Dev Container Template"
+description = "Rust Book"
 readme = "README.md"
-repository = "https://github.com/shian15810/rust-devcontainer-template"
+repository = "https://github.com/shian15810/rust-book"
 license = "MIT OR Apache-2.0"
-keywords = ["rust", "devcontainer", "template"]
+keywords = ["rust", "book"]
 categories = ["rust-patterns"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
